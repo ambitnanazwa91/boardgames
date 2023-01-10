@@ -1,7 +1,7 @@
 body
 {
 	margin: 0;
-	background-color: #2F3336;
+	background-color: #00539CFF;
 	color: #efefef;
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
@@ -23,6 +23,7 @@ header{
 .logotext{
     display: inline-block;
     font-size: 30px;
+    color: #EEA47FFF;
 }
 
 .logoimg{
@@ -32,4 +33,42 @@ header{
 .logoimg img{
     width: 50px;
     margin-left: 5px;
+}
+
+
+.topnav{
+    background-color: #EEA47FFF;
+	text-align: center;
+}
+
+.menu{
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	font-size: 18px;
+	min-height: 38px;
+	line-height: 200%;
+}
+
+.menu li {
+    display: inline-block;
+    border-right: #00539CFF solid 1px;
+    padding-left: 20px;
+	padding-right: 20px;
+}
+
+.menu > li:first-child
+{
+	border-left: 1px solid #00539CFF;
+}
+
+.menu a
+{
+	color: #00539CFF;
+	text-decoration: none;
+}
+
+.menu a:hover
+{
+	color: #0a2b42;
 }
