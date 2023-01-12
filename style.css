@@ -72,3 +72,27 @@ header{
 {
 	color: #0a2b42;
 }
+
+
+.container{
+    width: auto;
+    padding-top: 60px;
+    text-align: center; 
+    padding-left: 140px;
+    padding-right: 240px;
+   
+}
+
+
+.container img {
+    width: 440px;
+    height: 200px;
+    display:inline-block;
+    padding: 5px;
+    margin-left: 100px;
+    border-radius: 10%;
+
+}
+
+
+    
