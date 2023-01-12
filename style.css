@@ -95,3 +95,6 @@ header{
 }
 
 
+.container img:hover{
+    opacity: .5;
+}
