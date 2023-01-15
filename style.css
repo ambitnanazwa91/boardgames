@@ -98,3 +98,45 @@ header{
 .container img:hover{
     opacity: .5;
 }
+
+.description{
+    padding-top: 20px;
+    width: 900px;
+    height: 1200px;
+    text-align: justify;
+    margin-left: 26%;
+    margin-right: 24%;
+    
+    
+}
+
+
+
+
+.description img{
+    width: 420px;
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 20px;
+
+
+}
+
+.description p{
+    margin: 0px;
+    text-align: left;
+    
+   
+}
+
+.description h1{
+    margin-top: 10px;
+    padding-top: 5px;
+    margin-left: 450px;
+}
+
+.anotherdesc{
+    padding-top: 35px;
+}
+
