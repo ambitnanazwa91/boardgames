@@ -228,7 +228,7 @@ header.hero-img a:visited {
 .team-hero-img {
   position: relative;
   height: 80vh;
-  background-image: url("/img/team/chairs (2).jpg");
+  background-image: url("./img/team/chairs (2).jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
