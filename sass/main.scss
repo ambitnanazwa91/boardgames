@@ -1,0 +1,321 @@
+@use './colors' as *;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-padding-top: 74px;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: $bg-color;
+}
+
+.blue-text {
+	color: $main-color;
+}
+
+.shadow-bg {
+	background-color: rgb(0, 0, 0, 0.8);
+}
+
+.section-title {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.second-section-title {
+	text-align: center;
+	text-transform: uppercase;
+	color: $white;
+}
+
+.underline {
+	width: 60px;
+	height: 4px;
+	margin: 0 auto 40px;
+	border-bottom: solid $main-color;
+}
+
+nav {
+	text-transform: uppercase;
+	transition: background-color 0.6s;
+	z-index: 2;
+
+	.navbar-toggler {
+		padding: 10px 15px;
+	}
+
+	.navbar-brand {
+		font-weight: bold;
+	}
+
+	.nav-link,
+	.navbar-nav .show > .nav-link,
+	.navbar-brand,
+	.fa-bars {
+		color: $white;
+	}
+
+	.nav-link:focus,
+	.nav-link:hover,
+	.navbar-nav .nav-link.active,
+	.navbar-nav .show > .nav-link {
+		color: $main-color;
+	}
+}
+
+header.hero-img {
+	position: relative;
+	height: 100vh;
+	background-image: url('../img/hero-small.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: $white;
+	z-index: 0;
+
+	h1 {
+		text-transform: uppercase;
+	}
+
+	.hero-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0, 0, 0, 0.8);
+		z-index: -5;
+	}
+
+	.hero-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.fa-chevron-down {
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		font-size: 20px;
+		color: $white;
+	}
+
+	a:link,
+	a:visited {
+		color: white;
+		text-decoration: none;
+	}
+}
+
+.aboutus {
+	i {
+		margin-top: 20px;
+		font-size: 30px;
+	}
+
+	.aboutus-card-title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+
+	.aboutus-card-text {
+		font-size: 14px;
+	}
+
+	.aboutus-hover {
+		transition: color 0.3s;
+	}
+
+	.aboutus-hover:hover {
+		color: $main-color;
+	}
+}
+
+.aboutus-hero {
+	color: rgb(226, 226, 226);
+	position: relative;
+	background-image: url('../img/technology-small.jpg');
+	background-size: cover;
+	background-position: center;
+	z-index: -4;
+
+	.aboutus-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: -5;
+	}
+
+	.aboutus-hero-item {
+		margin: 10px 0px;
+
+		i {
+			font-size: 36px;
+		}
+
+		.aboutus-hero-title {
+			font-size: 24px;
+		}
+	}
+}
+
+.portfolio {
+	.carousel-caption {
+		position: absolute;
+		right: 0%;
+		left: 0%;
+		color: $white;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	.carousel-indicators {
+		margin-bottom: 60px;
+	}
+}
+
+.prices {
+	.price-box {
+		background-color: $white;
+		padding: 35px;
+		margin: 50px;
+		-webkit-box-shadow: 5px 8px 7px 0px rgba(66, 68, 90, 1);
+		-moz-box-shadow: 5px 8px 7px 0px rgba(66, 68, 90, 1);
+		box-shadow: 5px 8px 7px 0px rgba(66, 68, 90, 1);
+		transition: scale 0.5s;
+
+		.price-title {
+			color: $main-color;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 20px;
+		}
+
+		p span {
+			font-weight: bold;
+		}
+
+		i {
+			padding: 0px 5px;
+			font-size: 20px;
+		}
+
+		.btn {
+			text-transform: uppercase;
+		}
+	}
+
+	.price-tag {
+		font-weight: bold;
+		font-size: xx-large;
+	}
+
+	.price-box:hover {
+		scale: 1.1;
+	}
+}
+
+.price-info {
+	margin-top: 30px;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.team {
+	.card {
+		margin: 0px 45px;
+		transition: scale 0.3s;
+
+		img {
+			height: 300px;
+			object-fit: cover;
+		}
+
+		.card-title {
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		.card-body {
+			font-size: 14px;
+			height: 160px;
+		}
+	}
+
+	.card:hover {
+		scale: 0.96;
+	}
+
+	.section-title {
+		color: $white;
+	}
+}
+
+.team-hero-img {
+	position: relative;
+	height: 80vh;
+	background-image: url('/img/team/chairs (2).jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	z-index: 0;
+
+	.team-hero-img-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0, 0, 0, 0.7);
+		z-index: -5;
+	}
+}
+
+@media (min-width: 768px) {
+	.hero-text {
+		h1 {
+			font-size: 42px;
+		}
+
+		p {
+			font-size: 20px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.aboutus-hero {
+		background-image: url('../img/technology-hd.jpg');
+	}
+}
+
+@media (min-width: 1200px) {
+	header.hero-img {
+		background-image: url('../img/hero-big.jpeg');
+	}
+}
+
+@media (max-width: 320px) {
+	.team-hero-img {
+		height: 90vh;
+	}
+
+	.team .card img {
+		height: 150px;
+	}
+}
