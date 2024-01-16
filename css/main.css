@@ -1,0 +1,332 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 74px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ebecf2;
+}
+
+.blue-text {
+  color: #039dff;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.second-section-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.underline {
+  width: 60px;
+  height: 4px;
+  margin: 0 auto 40px;
+  border-bottom: solid #039dff;
+}
+
+nav {
+  text-transform: uppercase;
+  transition: background-color 0.6s;
+  z-index: 2;
+}
+nav .navbar-toggler {
+  padding: 10px 15px;
+}
+nav .navbar-brand {
+  font-weight: bold;
+}
+nav .nav-link,
+nav .navbar-nav .show > .nav-link,
+nav .navbar-brand,
+nav .fa-bars {
+  color: #fff;
+}
+nav .nav-link:focus,
+nav .nav-link:hover,
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .show > .nav-link {
+  color: #039dff;
+}
+
+header.hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/hero-small.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  z-index: 0;
+}
+header.hero-img h1 {
+  text-transform: uppercase;
+}
+header.hero-img .hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -5;
+}
+header.hero-img .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+header.hero-img .fa-chevron-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 20px;
+  color: #fff;
+}
+header.hero-img a:link,
+header.hero-img a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.aboutus .aboutus-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.aboutus .aboutus-card-text {
+  font-size: 14px;
+}
+.aboutus .aboutus-hover {
+  transition: color 0.3s;
+}
+.aboutus .aboutus-hover:hover {
+  color: #039dff;
+}
+
+.aboutus-hero {
+  color: rgb(226, 226, 226);
+  position: relative;
+  background-image: url("../img/technology-small.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -4;
+}
+.aboutus-hero .aboutus-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -5;
+}
+.aboutus-hero .aboutus-hero-item {
+  margin: 10px 0px;
+}
+.aboutus-hero .aboutus-hero-item i {
+  font-size: 36px;
+}
+.aboutus-hero .aboutus-hero-item .aboutus-hero-title {
+  font-size: 24px;
+}
+
+.portfolio .carousel-caption {
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.portfolio .carousel-indicators {
+  margin-bottom: 60px;
+}
+
+.prices .price-box {
+  background-color: #fff;
+  padding: 35px;
+  margin: 50px;
+  box-shadow: 5px 8px 7px 0px rgb(66, 68, 90);
+  transition: scale 0.5s;
+}
+.prices .price-box .price-title {
+  color: #039dff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+.prices .price-box p span {
+  font-weight: bold;
+}
+.prices .price-box i {
+  padding: 0px 5px;
+  font-size: 20px;
+}
+.prices .price-box .btn {
+  text-transform: uppercase;
+}
+.prices .price-tag {
+  font-weight: bold;
+  font-size: xx-large;
+}
+.prices .price-box:hover {
+  scale: 1.1;
+}
+
+.price-info {
+  margin-top: 30px;
+}
+.price-info a {
+  text-decoration: none;
+}
+
+.team .card {
+  margin: 0px 45px;
+  transition: scale 0.3s;
+}
+.team .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team .card .card-title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.team .card .card-body {
+  font-size: 14px;
+  height: 160px;
+}
+.team .card:hover {
+  scale: 0.96;
+}
+.team .section-title {
+  color: #fff;
+}
+
+.team-hero-img {
+  position: relative;
+  height: 100%;
+  background-image: url("/img/team/chairs (2).jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.team-hero-img .team-hero-img-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}
+
+.achivments {
+  background-color: #ebecf2;
+}
+.achivments .achivments-list {
+  padding: 20px 0;
+}
+.achivments .achivments-list i {
+  padding-top: 10px;
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+.achivments .achivments-list .achivment-number {
+  font-size: 22px;
+  font-weight: bold;
+}
+.achivments .achivments-list .achivment-text {
+  text-transform: uppercase;
+}
+
+.contact-hero-img {
+  position: relative;
+  height: 100%;
+  background-image: url("/img/city.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.contact-hero-img .team-hero-img-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: -5;
+}
+
+.contact {
+  color: #fff;
+}
+.contact .underline {
+  border-color: #fff;
+}
+.contact .contact-items {
+  font-size: 12px;
+}
+.contact .contact-items .contact-title {
+  text-transform: uppercase;
+}
+.contact .contact-items .social {
+  font-size: 26px;
+}
+.contact .contact-items .social .contact-icon a {
+  padding: 0px 10px;
+  color: #fff;
+  transition: color 0.3s;
+}
+.contact .contact-items .social .contact-icon a:hover {
+  color: #039dff;
+}
+
+@media (min-width: 768px) {
+  .hero-text h1 {
+    font-size: 42px;
+  }
+  .hero-text p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .aboutus-hero {
+    background-image: url("../img/technology-hd.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  header.hero-img {
+    background-image: url("../img/hero-big.jpeg");
+  }
+}
+@media (max-width: 320px) {
+  .team .card img {
+    height: 150px;
+  }
+}/*# sourceMappingURL=main.css.map */
