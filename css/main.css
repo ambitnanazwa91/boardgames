@@ -227,8 +227,8 @@ header.hero-img a:visited {
 
 .team-hero-img {
   position: relative;
-  height: 80vh;
-  background-image: url("../img/team/chairs (2).jpg");
+  height: 100%;
+  background-image: url("/img/team/chairs (2).jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -242,6 +242,69 @@ header.hero-img a:visited {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: -5;
+}
+
+.achivments {
+  background-color: #ebecf2;
+}
+.achivments .achivments-list {
+  padding: 20px 0;
+}
+.achivments .achivments-list i {
+  padding-top: 10px;
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+.achivments .achivments-list .achivment-number {
+  font-size: 22px;
+  font-weight: bold;
+}
+.achivments .achivments-list .achivment-text {
+  text-transform: uppercase;
+}
+
+.contact-hero-img {
+  position: relative;
+  height: 100%;
+  background-image: url("/img/city.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.contact-hero-img .team-hero-img-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: -5;
+}
+
+.contact {
+  color: #fff;
+}
+.contact .underline {
+  border-color: #fff;
+}
+.contact .contact-items {
+  font-size: 12px;
+}
+.contact .contact-items .contact-title {
+  text-transform: uppercase;
+}
+.contact .contact-items .social {
+  font-size: 26px;
+}
+.contact .contact-items .social .contact-icon a {
+  padding: 0px 10px;
+  color: #fff;
+  transition: color 0.3s;
+}
+.contact .contact-items .social .contact-icon a:hover {
+  color: #039dff;
 }
 
 @media (min-width: 768px) {
@@ -263,9 +326,6 @@ header.hero-img a:visited {
   }
 }
 @media (max-width: 320px) {
-  .team-hero-img {
-    height: 90vh;
-  }
   .team .card img {
     height: 150px;
   }
